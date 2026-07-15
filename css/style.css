@@ -1,0 +1,24 @@
+body{
+    background:#f8f9fa;
+}
+
+.card{
+    border:none;
+    border-radius:15px;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    transition:.3s;
+}
+
+footer{
+    margin-top:50px;
+}
+
+.imagem-hero{
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
+}
