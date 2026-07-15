@@ -9,4 +9,4 @@
 O **Adote um Amigo** é uma landing page interativa desenvolvida para incentivar a adoção responsável de cães e gatos. 
 
 ### ✨ Funcionalidades
-formulário de adoção
+Formulário de adoção
