@@ -140,128 +140,134 @@
 
 <!-- Formulário -->
 
+<!-- Formulário -->
+
 <section id="formulario" class="container my-5">
 
-<div class="card shadow">
+    <div class="card shadow">
 
-<div class="card-body">
+        <div class="card-body">
 
-<h2 class="text-center mb-4">
+            <h2 class="text-center mb-4">
+                Quero Adotar
+            </h2>
 
-Quero Adotar
+            <form id="formAdocao">
 
-</h2>
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="nome">
+                </div>
 
-<form id="formAdocao">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="email">
+                </div>
 
-<div class="mb-3">
+                <div class="mb-3">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input
+                        type="tel"
+                        class="form-control"
+                        id="telefone">
+                </div>
 
-<label class="form-label">
+                <!-- CEP -->
 
-Nome
+                <div class="mb-3">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="cep"
+                        placeholder="00000-000"
+                        maxlength="9">
+                </div>
 
-</label>
+                <!-- Endereço -->
 
-<input
-type="text"
-class="form-control"
-id="nome">
+                <div class="mb-3">
+                    <label for="logradouro" class="form-label">Endereço</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="logradouro"
+                        readonly>
+                </div>
 
-</div>
+                <div class="row">
 
-<div class="mb-3">
+                    <div class="col-md-6 mb-3">
+                        <label for="bairro" class="form-label">Bairro</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="bairro"
+                            readonly>
+                    </div>
 
-<label class="form-label">
+                    <div class="col-md-6 mb-3">
+                        <label for="cidade" class="form-label">Cidade</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="cidade"
+                            readonly>
+                    </div>
 
-Email
+                <div class="mb-3">
+                    <label for="animal" class="form-label">Animal</label>
 
-</label>
+                    <select
+                        class="form-select"
+                        id="animal">
 
-<input
-type="email"
-class="form-control"
-id="email">
+                        <option value="">Escolha</option>
+                        <option>Cachorro</option>
+                        <option>Gato</option>
 
-</div>
+                    </select>
+                </div>
 
-<div class="mb-3">
+                <div class="text-center">
 
-<label class="form-label">
+                    <button
+                        type="submit"
+                        class="btn btn-success btn-lg">
 
-Telefone
+                        Enviar
 
-</label>
+                    </button>
 
-<input
-type="tel"
-class="form-control"
-id="telefone">
+                </div>
 
-</div>
+            </form>
 
-<div class="mb-3">
+            <div id="resultado" class="mt-4 text-center"></div>
 
-<label class="form-label">
+        </div>
 
-Animal
-
-</label>
-
-<select
-class="form-select"
-id="animal">
-
-<option value="">Escolha</option>
-<option>Cachorro</option>
-<option>Gato</option>
-
-</select>
-
-</div>
-
-<div class="mb-3">
-
-<label class="form-label">
-
-Mensagem
-
-</label>
-
-<textarea
-class="form-control"
-rows="5"
-id="mensagem"></textarea>
-
-</div>
-
-<div class="text-center">
-
-<button
-class="btn btn-success btn-lg">
-
-Enviar
-
-</button>
-
-</div>
-
-</form>
-
-<div id="mensagem" class="mt-4 text-center"></div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
-
-<footer class="bg-success text-white text-center p-3">
-
-© 2026 Adote um Amigo
-
+<footer class="bg-success text-white text-center py-3 mt-5">
+    <div class="container">
+        <p class="mb-0">
+            © 2026 Adote um Amigo - Todos os direitos reservados.
+        </p>
+    </div>
 </footer>
 
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript da aplicação -->
 <script src="../script/script.js"></script>
 
 </body>
